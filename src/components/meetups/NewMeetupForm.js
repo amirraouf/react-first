@@ -14,7 +14,7 @@ function NewMeetupForm(props) {
         image: imageRef.current.value,
         description: descRef.current.value
     }
-    console.log(meetupData)
+    props.newMeetup(meetupData)
   }
   return (
     <Card>
